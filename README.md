@@ -9,6 +9,7 @@ A very simple and lightweight tool to create and modify text on the go
 2. Open Blender
 3. Go to Edit > Preferences > Add-Ons > Install
 4. Select the .py file
+   
 And you're done!
 
 ## What can it do?
