@@ -1,7 +1,7 @@
 # Simple Blender Text Tool
 A very simple and lightweight tool to create and modify text on the go
 <p align="center">
-  <img src="https://github.com/Clement2A/SimpleBlenderTextTool/assets/44134904/63877947-acaf-4736-8547-931c293e1415" alt="Image of the tool's interface, displaying all of its functionalities" title="Simple Blender Text Tool">
+  <img src="https://github.com/Clement2A/SimpleBlenderTextTool/assets/44134904/87860770-322a-4b52-8f60-dae356ecd80a" alt="Image of the tool's interface, displaying all of its functionalities" title="Simple Blender Text Tool">
 </p>
 
 ## Getting started
