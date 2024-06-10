@@ -31,14 +31,14 @@ class MyProperties(bpy.types.PropertyGroup):
     text_font_size : bpy.props.FloatProperty(name= "Font Size", min= 0.0001, soft_min = 0.010, soft_max = 10, default = 1, precision=3, description="Font size")
     text_font_shear : bpy.props.FloatProperty(name= "Shear", min= -1, max = 1, default = 0, precision=3, description="Italic angle of the characters")
     look_at_camera : bpy.props.BoolProperty(name = "Look at camera", description="Should the text face towards the viewport's camera")
-    text_align_x : bpy.props.EnumProperty(name=("Horizontal"), items=[
+    text_align_x : bpy.props.EnumProperty(name=("Horizontal Alignment"), items=[
         ('LEFT', 'Left', '', 'ALIGN_LEFT', 1),
         ('CENTER', 'Center', '', 'ALIGN_CENTER', 2),
         ('RIGHT', 'Right', '', 'ALIGN_RIGHT', 3),
         ('JUSTIFY', 'Justify', '', 'ALIGN_JUSTIFY', 4),
         ('FLUSH', 'Flush', '', 'ALIGN_FLUSH', 5),
     ], default='CENTER', description="Text horizontal alignment from the object center")
-    text_align_y : bpy.props.EnumProperty(name=("Vertical"), items=[
+    text_align_y : bpy.props.EnumProperty(name=("Vertical Alignment"), items=[
         ('TOP', 'Top', '', 'ALIGN_TOP', 1),
         ('TOP_BASELINE', 'Top Baseline', '', 'ALIGN_TOP', 2),
         ('CENTER', 'Middle', '', 'ALIGN_MIDDLE', 3),
@@ -130,7 +130,7 @@ class TEXTTOOL_OT_CreateText(bpy.types.Operator):
         return {'FINISHED'}
         
 class TEXTTOOL_OT_LookAtCamera(bpy.types.Operator):
-    """Makes the selected font look at the camera"""
+    """Makes the selected font look at the viewport's camera"""
     bl_label = "Look at Camera"
     bl_idname = "texttool.op_lookatcamera"
     
