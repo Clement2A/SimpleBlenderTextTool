@@ -82,10 +82,13 @@ class TEXTTOOL_PT_TextEditing(bpy.types.Panel):
         layout = self.layout
         
         currObject = bpy.context.object
+
+        if(currObject != None):
+            return
         
         if(currObject.type != "FONT"):
             layout.label(text = "Current object is not a font", icon="ERROR")
-            return;
+            return
 
         layout.prop(currObject.data, "body")
         layout.prop(currObject.data, "extrude")
